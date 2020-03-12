@@ -39,7 +39,7 @@ const stylesContent = () => {
 const FullNote = (props: any) => {
 
     const dispatch = useDispatch();
-    
+
     const selectedId = useSelector<any, string>(state => state.notesReducer.selectedNoteId);
     const notes = useSelector<any, InterfaceNote[]>(state => state.notesReducer.notes);
     const fullNote = useSelector<any, IFullNote>(state => state.fullNoteReducer.note);
@@ -71,7 +71,7 @@ const FullNote = (props: any) => {
         const newContent = event.target.value;
         dispatch(actionCreator.contentChanged(newContent));
     }
-    if (selectedId === '') return <p>Please click on note from list or add new note!</p>
+    if (selectedId === '') return <p>Please click on note from the list or add new note!</p>
     return (
         <div style={{ height: '100%', width: '100%' }}>
             <TextField

@@ -12,8 +12,7 @@ const classNames = mergeStyleSets({
     },
     section: {
         width: '95%',
-        marginTop: '5px',
-        //margin: '5px 0px 0px 12px',
+        marginTop: '5px'
     }
 })
 
@@ -24,7 +23,6 @@ const cardTokens: ICardTokens = {
     minWidth: 212,
     width: '98%'
 };
-
 
 const Note = (props: InterfaceNote) => {
 
