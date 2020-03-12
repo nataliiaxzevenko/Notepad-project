@@ -8,7 +8,6 @@ import {InterfaceNote} from '../../../../store/reducers/notes';
 const classNames = mergeStyleSets({
     item: {
         width: '100%',
-        //margin: '12px 0px 0px 12px',
         maxWidth: '400px'
     },
     section: {

@@ -39,6 +39,7 @@ const stylesContent = () => {
 const FullNote = (props: any) => {
 
     const dispatch = useDispatch();
+    
     const selectedId = useSelector<any, string>(state => state.notesReducer.selectedNoteId);
     const notes = useSelector<any, InterfaceNote[]>(state => state.notesReducer.notes);
     const fullNote = useSelector<any, IFullNote>(state => state.fullNoteReducer.note);
